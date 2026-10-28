@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: 자동차 할부 월 납입금 계산기
+description: 차량 가격, 선수금, 기간, 연이율을 입력하면 원리금균등 방식의 월 납입금과 총 이자를 계산합니다.
+---
+<h1>자동차 할부 월 납입금 계산기</h1>
+<p>원리금균등상환 기준 단순 계산입니다. 실제 금액은 수수료·보험·취득세 등에 따라 달라질 수 있습니다.</p>
+<form id="calc" class="calc" novalidate>
+  <label>차량 가격 (원)<input name="price" type="text" inputmode="numeric" value="30,000,000" required></label>
+  <label>선수금 (원)<input name="down" type="text" inputmode="numeric" value="3,000,000"></label>
+  <label>할부 기간 (개월)<input name="months" type="number" inputmode="numeric" min="1" max="120" value="48" required></label>
+  <label>연이율 (%)<input name="rate" type="number" inputmode="decimal" min="0" step="0.01" value="5.9" required></label>
+  <button class="btn" type="submit">계산하기</button>
+</form>
+<p id="calc-error" class="error" role="alert" hidden></p>
+<dl id="calc-result" class="result" aria-live="polite" hidden>
+  <div><dt>대출 원금</dt><dd id="r-principal"></dd></div>
+  <div class="main"><dt>월 납입금</dt><dd id="r-monthly"></dd></div>
+  <div><dt>총 이자</dt><dd id="r-interest"></dd></div>
+  <div><dt>총 상환액</dt><dd id="r-total"></dd></div>
+</dl>
+{% set slot = "calc" %}{% include "partials/ad-slot.njk" %}
+<script src="/assets/js/calculator.js" defer></script>

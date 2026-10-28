@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+layout_type: post
+---
+<article class="prose">
+  {% set cat = category | categoryInfo %}
+  {% if cat %}<p class="badge"><a href="/category/{{ cat.slug }}/">{{ cat.name }}</a></p>{% endif %}
+  <h1>{{ title }}</h1>
+  <p class="meta">
+    작성일 <time datetime="{{ date | dateYmd }}">{{ date | dateYmd }}</time>
+    {% if updated %} · 수정일 <time datetime="{{ updated | dateYmd }}">{{ updated | dateYmd }}</time>{% endif %}
+  </p>
+  {% if verify %}<p class="notice">초안입니다. 수치·규정은 게시 전 최신 공식 자료로 검증이 필요합니다.</p>{% endif %}
+  {% set slot = "top" %}{% include "partials/ad-slot.njk" %}
+  {{ content | withToc | safe }}
+  {% set slot = "bottom" %}{% include "partials/ad-slot.njk" %}
+  {% set rel = collections.postsByDate | related(page.url, category, 3) %}
+  {% if rel.length %}
+  <section class="related">
+    <h2>관련 글</h2>
+    <ul>{% for p in rel %}<li><a href="{{ p.url }}">{{ p.data.title }}</a></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  <section class="sources">
+    <h2>출처</h2>
+    {% if sources and sources.length %}
+    <ul>{% for s in sources %}<li>{% if s.url %}<a href="{{ s.url }}" rel="noopener nofollow">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</li>{% endfor %}</ul>
+    {% else %}
+    <p>출처 입력 예정</p>
+    {% endif %}
+  </section>
+</article>

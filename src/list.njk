@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.listPages
+  size: 1
+  alias: entry
+permalink: "{{ entry.url }}"
+---
+<h1>{{ title }}</h1>
+<p>{{ entry.description }}</p>
+{% include "partials/category-nav.njk" %}
+{% if entry.items.length %}
+<ul class="post-list">
+{% for post in entry.items %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a><p>{{ post.data.description }}</p><time datetime="{{ post.date | dateYmd }}">{{ post.date | dateYmd }}</time></li>
+{% endfor %}
+</ul>
+{% else %}
+<p>아직 글이 없습니다.</p>
+{% endif %}
+{% if entry.totalPages > 1 %}
+<nav class="pager" aria-label="페이지 이동">
+  {% if entry.prevUrl %}<a href="{{ entry.prevUrl }}" rel="prev">‹ 이전</a>{% else %}<span></span>{% endif %}
+  <span>{{ entry.pageNumber }} / {{ entry.totalPages }}</span>
+  {% if entry.nextUrl %}<a href="{{ entry.nextUrl }}" rel="next">다음 ›</a>{% else %}<span></span>{% endif %}
+</nav>
+{% endif %}

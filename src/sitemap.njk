@@ -1,0 +1,17 @@
+---
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all %}{% if not item.data.noindex and not item.data.entry %}
+  <url>
+    <loc>{{ item.url | absUrl(site) }}</loc>{% if item.data.tags and "posts" in item.data.tags %}
+    <lastmod>{{ (item.data.updated or item.date) | dateYmd }}</lastmod>{% endif %}
+  </url>
+{%- endif %}{% endfor %}
+{%- for entry in collections.listPages %}
+  <url>
+    <loc>{{ entry.url | absUrl(site) }}</loc>
+  </url>
+{%- endfor %}
+</urlset>

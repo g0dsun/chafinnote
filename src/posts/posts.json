@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/post.njk",
+  "tags": "posts",
+  "permalink": "/posts/{{ page.fileSlug }}/",
+  "parent": { "name": "글 목록", "url": "/posts/" }
+}

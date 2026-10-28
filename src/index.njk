@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: ""
+description: 할부·리스·장기렌트 비교와 중고차 대출 주의점, 월 납입금 계산기를 제공하는 자동차 금융 정보 사이트
+---
+<section class="hero">
+  <h1>{{ site.name }}</h1>
+  <p>할부·리스·장기렌트의 차이와 중고차 대출 주의점을 쉽게 정리합니다.</p>
+  <p><a class="btn" href="/calculator/">월 납입금 계산하기</a></p>
+</section>
+{% set slot = "home" %}{% include "partials/ad-slot.njk" %}
+{% include "partials/category-nav.njk" %}
+<section>
+  <h2>최근 글</h2>
+  <ul class="post-list">
+  {% for post in collections.postsByDate | head(5) %}
+    <li><a href="{{ post.url }}">{{ post.data.title }}</a><p>{{ post.data.description }}</p><time datetime="{{ post.date | dateYmd }}">{{ post.date | dateYmd }}</time></li>
+  {% endfor %}
+  </ul>
+  <p><a href="/posts/">전체 글 보기</a></p>
+</section>
