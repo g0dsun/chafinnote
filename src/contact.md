@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: 문의
-description: 차핀노트 문의 및 정정 요청 안내
+description: 차핀노트의 글 오류 제보, 정정 요청, 사이트 관련 문의 방법과 답변이 어려운 문의 유형을 안내합니다.
 permalink: /contact/
 ---
 오류 제보, 정정 요청, 사이트 관련 문의는 아래 이메일로 보내 주세요.

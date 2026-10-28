@@ -30,7 +30,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("listPages", (api) => {
     const posts = api.getFilteredByTag("posts").sort((a, b) => b.date - a.date);
     const groups = [
-      { key: "all", title: "글 목록", description: "자동차 할부·리스·장기렌트와 중고차 대출에 관한 글 모음", base: "/posts/", pageBase: "/posts/page/", posts },
+      { key: "all", title: "글 목록", description: "자동차 할부, 리스, 장기렌트의 차이와 중고차 대출 주의점까지, 차핀노트가 정리한 자동차 금융 글을 한곳에서 확인하세요.", base: "/posts/", pageBase: "/posts/page/", posts },
       ...categories
         .filter((c) => posts.some((p) => p.data.category === c.slug))
         .map((c) => ({
@@ -108,17 +108,27 @@ export default function (eleventyConfig) {
     };
   });
 
-  eleventyConfig.addFilter("articleLd", (page, title, description, date, updated, site) => ({
+  eleventyConfig.addFilter("articleLd", (page, title, description, date, updated, image, section, site) => ({
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
     inLanguage: "ko-KR",
+    image: [new URL(image, site.url).href],
     datePublished: ymd(date),
     dateModified: ymd(updated || date),
     mainEntityOfPage: new URL(page.url, site.url).href,
-    author: { "@type": "Person", name: site.author },
-    publisher: { "@type": "Organization", name: site.name },
+    ...(section ? { articleSection: section } : {}),
+    author: { "@type": "Person", name: site.author, url: new URL("/about/", site.url).href },
+    publisher: { "@type": "Organization", name: site.name, url: site.url },
+  }));
+
+  eleventyConfig.addFilter("siteLd", (site) => ({
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebSite", "@id": `${site.url}/#website`, name: site.name, url: site.url, inLanguage: "ko-KR", description: site.description },
+      { "@type": "Organization", "@id": `${site.url}/#org`, name: site.name, url: site.url, founder: { "@type": "Person", name: site.author, url: new URL("/about/", site.url).href } },
+    ],
   }));
 
   return {

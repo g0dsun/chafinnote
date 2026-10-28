@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: 운영자 소개
-description: 차핀노트 운영자 소개와 콘텐츠 작성 원칙
+description: 중고차 업계 15년 경력의 운영자 SUN이 자동차 금융 정보를 정리하는 차핀노트의 소개와 콘텐츠 작성 원칙입니다.
 permalink: /about/
 ---
 차핀노트는 자동차 할부·리스·장기렌트와 중고차 대출을 이해하기 쉽게 정리하는 정보 사이트입니다.

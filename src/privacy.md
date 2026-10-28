@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: 개인정보처리방침
-description: 차핀노트의 개인정보 수집·이용 및 쿠키·광고 관련 안내
+description: 차핀노트의 개인정보 수집 여부, 접속 기록 처리, 쿠키와 Google 광고 사용, 개인정보 보호책임자를 안내합니다.
 permalink: /privacy/
 ---
 시행일: 2026년 10월 28일

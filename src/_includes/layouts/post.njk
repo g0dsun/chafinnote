@@ -11,9 +11,14 @@ layout_type: post
     {% if updated %} · 수정일 <time datetime="{{ updated | dateYmd }}">{{ updated | dateYmd }}</time>{% endif %}
   </p>
   {% if verify %}<p class="notice">초안입니다. 수치·규정은 게시 전 최신 공식 자료로 검증이 필요합니다.</p>{% endif %}
+  {% if summary %}<aside class="summary" aria-label="한 줄 요약"><strong>한 줄 요약</strong><p>{{ summary }}</p></aside>{% endif %}
   {% set slot = "top" %}{% include "partials/ad-slot.njk" %}
   {{ content | withToc | safe }}
   {% set slot = "bottom" %}{% include "partials/ad-slot.njk" %}
+  <aside class="author-box" aria-label="글쓴이">
+    <strong>글쓴이 {{ site.author }}</strong>
+    <p>{{ site.authorBio }} <a href="/about/">운영자 소개</a></p>
+  </aside>
   {% set rel = collections.postsByDate | related(page.url, category, 3) %}
   {% if rel.length %}
   <section class="related">

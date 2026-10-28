@@ -44,3 +44,7 @@ h2{font-size:1.25rem;margin-top:1.8em}
 .related ul{padding-left:20px}
 .pager{display:flex;justify-content:space-between;align-items:center;margin:24px 0}
 h2[id],h3[id]{scroll-margin-top:12px}
+.summary{background:var(--soft);border-left:4px solid var(--brand);border-radius:6px;padding:10px 16px;margin:16px 0}
+.summary p{margin:4px 0 0}
+.author-box{border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:32px 0 0;font-size:14px}
+.author-box p{margin:4px 0 0;color:var(--muted)}
