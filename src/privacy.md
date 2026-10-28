@@ -16,8 +16,8 @@ permalink: /privacy/
 
 ## 3. 쿠키와 광고
 사이트는 Google AdSense 등 광고를 게재할 수 있습니다. 광고를 게재하는 경우 Google을 포함한 제3자 광고 사업자가 쿠키를 사용해 이용자의 이 사이트 및 다른 사이트 방문 기록을 바탕으로 광고를 게재할 수 있습니다.
-- 맞춤 광고는 Google 광고 설정(https://adssettings.google.com)에서 해제할 수 있습니다.
-- Google의 광고 관련 데이터 사용 방식은 https://policies.google.com/technologies/partner-sites 에서 확인할 수 있습니다.
+- 맞춤 광고는 Google 광고 설정(<https://adssettings.google.com>)에서 해제할 수 있습니다.
+- Google의 광고 관련 데이터 사용 방식은 <https://policies.google.com/technologies/partner-sites> 에서 확인할 수 있습니다.
 - 브라우저 설정에서 쿠키를 차단하거나 삭제할 수 있습니다.
 
 ## 4. 제3자 제공
