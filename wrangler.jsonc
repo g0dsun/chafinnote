@@ -4,5 +4,8 @@
   "assets": {
     "directory": "./_site",
     "not_found_handling": "404-page"
-  }
+  },
+  "routes": [
+    { "pattern": "chafinnote.com", "custom_domain": true }
+  ]
 }
