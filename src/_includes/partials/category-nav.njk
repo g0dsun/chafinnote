@@ -1,6 +1,6 @@
 <nav class="chips" aria-label="카테고리">
   <a href="/posts/"{% if page.url == "/posts/" %} aria-current="page"{% endif %}>전체</a>
-  {%- for c in categories %}
+  {%- for c in collections.activeCategories %}
   <a href="/category/{{ c.slug }}/"{% if page.url == "/category/" + c.slug + "/" %} aria-current="page"{% endif %}>{{ c.name }}</a>
   {%- endfor %}
 </nav>

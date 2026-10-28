@@ -20,19 +20,27 @@ export default function (eleventyConfig) {
     api.getFilteredByTag("posts").sort((a, b) => b.date - a.date)
   );
 
+  // 글이 1개 이상인 카테고리만 (칩, 카테고리 페이지, 사이트맵이 이 기준을 따름)
+  eleventyConfig.addCollection("activeCategories", (api) => {
+    const posts = api.getFilteredByTag("posts");
+    return categories.filter((c) => posts.some((p) => p.data.category === c.slug));
+  });
+
   // 전체 목록 + 카테고리별 목록을 페이지 단위로 펼친 컬렉션 (list.njk가 페이지네이션)
   eleventyConfig.addCollection("listPages", (api) => {
     const posts = api.getFilteredByTag("posts").sort((a, b) => b.date - a.date);
     const groups = [
       { key: "all", title: "글 목록", description: "자동차 할부·리스·장기렌트와 중고차 대출에 관한 글 모음", base: "/posts/", pageBase: "/posts/page/", posts },
-      ...categories.map((c) => ({
-        key: c.slug,
-        title: `${c.name} 글 모음`,
-        description: c.description,
-        base: `/category/${c.slug}/`,
-        pageBase: `/category/${c.slug}/page/`,
-        posts: posts.filter((p) => p.data.category === c.slug),
-      })),
+      ...categories
+        .filter((c) => posts.some((p) => p.data.category === c.slug))
+        .map((c) => ({
+          key: c.slug,
+          title: `${c.name} 글 모음`,
+          description: c.description,
+          base: `/category/${c.slug}/`,
+          pageBase: `/category/${c.slug}/page/`,
+          posts: posts.filter((p) => p.data.category === c.slug),
+        })),
     ];
     return groups.flatMap(({ posts: list, base, pageBase, ...meta }) => {
       const pages = chunk(list, PAGE_SIZE);
