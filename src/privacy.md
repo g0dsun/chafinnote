@@ -25,7 +25,6 @@ permalink: /privacy/
 
 ## 5. 개인정보 보호책임자
 - 성명: 김선관
-- 카카오톡:godsun11
 - 이메일: changecar11@gmail.com
 
 ## 6. 방침의 변경
