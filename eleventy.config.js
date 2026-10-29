@@ -123,6 +123,12 @@ export default function (eleventyConfig) {
     publisher: { "@type": "Organization", name: site.name, url: site.url },
   }));
 
+  eleventyConfig.addFilter("faqLd", (items) => ({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: i.a } })),
+  }));
+
   eleventyConfig.addFilter("siteLd", (site) => ({
     "@context": "https://schema.org",
     "@graph": [

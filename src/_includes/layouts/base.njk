@@ -22,6 +22,9 @@
 <meta property="og:image" content="{{ (image or site.ogImage) | absUrl(site) }}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&family=Noto+Serif+KR:wght@600&family=Vollkorn:wght@600&display=swap">
 <link rel="stylesheet" href="/assets/css/style.css">
 {% if page.url == "/" %}
 <script type="application/ld+json">{{ site | siteLd | jsonld | safe }}</script>
@@ -34,7 +37,7 @@
 {% endif %}
 {% if site.adsenseId %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsenseId }}" crossorigin="anonymous"></script>{% endif %}
 </head>
-<body>
+<body{% if page.url == "/" %} class="home"{% endif %}>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/">{{ site.name }}</a>
@@ -45,7 +48,7 @@
     </nav>
   </div>
 </header>
-<main class="wrap">
+<main{% if page.url != "/" %} class="wrap"{% endif %}>
   {% if page.url != "/" and not noindex %}
   <nav class="crumbs" aria-label="현재 위치">
     <a href="/">홈</a>{% if parent %} › <a href="{{ parent.url }}">{{ parent.name }}</a>{% endif %} › <span>{{ title }}</span>
@@ -56,7 +59,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>본 사이트의 내용은 일반적인 정보 제공이 목적이며 금융상품 가입을 권유하지 않습니다. 실제 조건은 금융사·계약서에서 반드시 확인하세요.</p>
-    <p><a href="/about/">운영자 소개</a> · <a href="/privacy/">개인정보처리방침</a> · <a href="/contact/">문의</a></p>
+    <p class="foot-links"><a href="/about/">운영자 소개</a> <a href="/privacy/">개인정보처리방침</a> <a href="/contact/">문의</a></p>
     <p>© {{ site.name }}</p>
   </div>
 </footer>

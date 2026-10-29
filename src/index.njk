@@ -3,19 +3,75 @@ layout: layouts/base.njk
 title: ""
 description: 자동차 할부, 리스, 장기렌트의 차이와 중고차 구매 시 대출 주의점을 정리하고, 월 납입금 계산기를 제공하는 자동차 금융 정보 사이트입니다.
 ---
+<script type="application/ld+json">{{ homeFaq | faqLd | jsonld | safe }}</script>
 <section class="hero">
-  <h1>{{ site.name }}</h1>
-  <p>할부·리스·장기렌트의 차이와 중고차 대출 주의점을 쉽게 정리합니다.</p>
-  <p><a class="btn" href="/calculator/">월 납입금 계산하기</a></p>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>할부·리스·장기렌트,<br>내 상황엔 뭐가 맞을까요?</h1>
+      <p class="lede">소유권, 월 부담 구조, 중도해지, 만기 시 선택지를 기준으로 쉽게 정리합니다.</p>
+      <p class="actions">
+        <a class="btn btn-primary" href="/posts/installment-vs-lease-vs-rent/">비교 글 읽기</a>
+        <a class="btn" href="/calculator/">월 납입금 계산하기</a>
+      </p>
+    </div>
+    <div class="hero-figure" aria-hidden="true">
+      <span class="figure">4</span>
+      <span class="figure-cap">비교 기준: 소유권, 월 부담 구조, 중도해지, 만기 시 선택지</span>
+    </div>
+  </div>
 </section>
+
+<section class="band band-paper2" id="compare">
+  <div class="wrap">
+    <h2>한눈에 비교</h2>
+    <p class="section-lede">일반적인 구조 기준이며 상품과 시기에 따라 다를 수 있습니다. 금리, 수수료, 월 납입금 같은 금융 수치는 금융사별로 다르니 확인이 필요합니다.</p>
+    <div class="table-scroll">
+      <table class="compare">
+        <thead><tr><th scope="col">구분</th><th scope="col">할부</th><th scope="col">리스</th><th scope="col">장기렌트</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">소유권</th><td>본인 명의로 등록</td><td>리스사 소유, 이용자는 사용권</td><td>렌터카 회사 소유</td></tr>
+          <tr><th scope="row">월 부담 구조</th><td>원금과 이자</td><td>차량 가치 하락분과 금융비용</td><td>차량 사용료 (세금·보험 등 포함 여부는 상품별 상이)</td></tr>
+          <tr><th scope="row">중도해지</th><td>중도상환수수료 발생 가능</td><td>위약금 발생 가능</td><td>위약금 발생 가능</td></tr>
+          <tr><th scope="row">만기 시 선택지</th><td>상환 완료 후 계속 보유 또는 매각</td><td>인수 또는 반납 (상품별 상이)</td><td>인수 또는 반납 (상품별 상이)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><a href="/posts/installment-vs-lease-vs-rent/">상황별 선택 기준까지 보기</a></p>
+  </div>
+</section>
+
 {% set slot = "home" %}{% include "partials/ad-slot.njk" %}
-{% include "partials/category-nav.njk" %}
-<section>
-  <h2>최근 글</h2>
-  <ul class="post-list">
-  {% for post in collections.postsByDate | head(5) %}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a><p>{{ post.data.description }}</p><time datetime="{{ post.date | dateYmd }}">{{ post.date | dateYmd }}</time></li>
-  {% endfor %}
-  </ul>
-  <p><a href="/posts/">전체 글 보기</a></p>
+
+<section class="band">
+  <div class="wrap">
+    <h2>주제별로 찾아보기</h2>
+    <ul class="topics">
+    {%- for c in collections.activeCategories %}
+      <li><a class="topic-name" href="/category/{{ c.slug }}/">{{ c.name }}</a><p>{{ c.description }}</p></li>
+    {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="band band-moss">
+  <div class="wrap">
+    <h2>최근 글</h2>
+    <ul class="post-list">
+    {% for post in collections.postsByDate | head(5) %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a><p>{{ post.data.description }}</p><time datetime="{{ post.date | dateYmd }}">{{ post.date | dateYmd }}</time></li>
+    {% endfor %}
+    </ul>
+    <p><a href="/posts/">전체 글 보기</a></p>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap">
+    <h2>자주 묻는 질문</h2>
+    <dl class="faq">
+    {%- for item in homeFaq %}
+      <div class="faq-item"><dt>{{ item.q }}</dt><dd>{{ item.a }}</dd></div>
+    {%- endfor %}
+    </dl>
+  </div>
 </section>
