@@ -5,7 +5,7 @@ summary: 월 납입금은 대출 원금, 연이율, 기간으로 정해집니다
 date: 2026-10-29
 updated: 2026-10-29
 category: installment
-verify: true
+verify: false
 sources:
   - name: 금융감독원 금융소비자 정보포털 파인 금융용어사전
     url: https://fine.fss.or.kr/fine/fnctip/fncDicary/list.do?menuNo=900021
@@ -93,5 +93,3 @@ sources:
 - 총 상환액(총 이자)이 안내되는지
 - 중도상환 시 비용이 있는지, 있다면 언제까지인지
 - 월 납입금이 같은 조건에서 비교된 것인지
-
-> 작성 메모: 위 계산값은 계산기 로직으로 산출한 예시입니다. 공식·용어 설명은 게시 전 공식 자료로 검증하고 sources를 채워 주세요.
