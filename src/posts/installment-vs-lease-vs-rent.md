@@ -5,7 +5,7 @@ summary: 할부는 내 명의로 사서 갚는 방식이고, 리스와 장기렌
 date: 2026-10-28
 updated: 2026-10-28
 category: installment
-verify: true
+verify: false
 sources:
   - name: 여신금융협회 금융상품 공시 (리스 상품 비교)
     url: https://gongsi.crefia.or.kr/portal/financialProdInfo/leaseProd
@@ -52,5 +52,3 @@ sources:
 3. 약정 주행거리 초과 시 추가 비용
 4. 만기 인수 가격과 조건
 5. 보험 가입 조건과 자기부담금
-
-> 작성 메모: 번호판, 세금 처리, 비용 처리 가능 여부는 상품과 시기에 따라 다릅니다. 게시 전 금융감독원·국세청·각 사 약관으로 확인하고 출처를 채워 주세요.
