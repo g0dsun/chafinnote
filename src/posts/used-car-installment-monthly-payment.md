@@ -6,7 +6,9 @@ date: 2026-10-29
 updated: 2026-10-29
 category: installment
 verify: true
-sources: []
+sources:
+  - name: 금융감독원 금융소비자 정보포털 파인 금융용어사전
+    url: https://fine.fss.or.kr/fine/fnctip/fncDicary/list.do?menuNo=900021
 ---
 이 글에 나오는 금리 5.9%는 예시를 위한 가정값이며 실제 금리가 아닙니다.
 
