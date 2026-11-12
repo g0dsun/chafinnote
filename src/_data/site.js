@@ -6,7 +6,7 @@ export default {
   authorBio: "중고차 업계에서 15년 이상 일한 경험을 바탕으로, 차를 살 때 실제로 헷갈리는 금융 조건을 정리합니다.",
   author: "SUN",
   email: "changecar11@gmail.com",
-  noindex: true, // 배포 전용: true면 전 페이지 noindex, robots.txt Disallow, sitemap.xml 미생성. 정식 오픈 시 false
+  noindex: false, // 배포 전용: true면 전 페이지 noindex, robots.txt Disallow, sitemap.xml 미생성. 정식 오픈 시 false
   adsenseId: "", // 예: "ca-pub-0000000000000000" 입력 시 광고 스크립트와 슬롯 활성화
   ogImage: "/assets/img/og-default.png", // 글에 image: 를 지정하면 그 글만 덮어씀
 };

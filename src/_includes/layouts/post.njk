@@ -16,7 +16,6 @@ layout_type: post
   {{ content | withToc | safe }}
   {% set slot = "bottom" %}{% include "partials/ad-slot.njk" %}
   <aside class="author-box" aria-label="글쓴이">
-    <strong>글쓴이 {{ site.author }}</strong>
     <p>{{ site.authorBio }} <a href="/about/">운영자 소개</a></p>
   </aside>
   {% set rel = collections.postsByDate | related(page.url, category, 3) %}
