@@ -15,6 +15,7 @@ const chunk = (arr, size) =>
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/favicon.svg");
+  eleventyConfig.addPassthroughCopy("src/googled4cf8cba4e043938.html");
 
   eleventyConfig.addCollection("postsByDate", (api) =>
     api.getFilteredByTag("posts").sort((a, b) => b.date - a.date)
