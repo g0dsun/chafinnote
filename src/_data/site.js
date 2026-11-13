@@ -7,6 +7,6 @@ export default {
   author: "SUN",
   email: "changecar11@gmail.com",
   noindex: false, // 배포 전용: true면 전 페이지 noindex, robots.txt Disallow, sitemap.xml 미생성. 정식 오픈 시 false
-  adsenseId: "", // 예: "ca-pub-0000000000000000" 입력 시 광고 스크립트와 슬롯 활성화
+  adsenseId: "ca-pub-6429838325916693", // 예: "ca-pub-0000000000000000" 입력 시 광고 스크립트와 슬롯 활성화
   ogImage: "/assets/img/og-default.png", // 글에 image: 를 지정하면 그 글만 덮어씀
 };
