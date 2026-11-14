@@ -94,6 +94,21 @@ export default function (eleventyConfig) {
     return out.slice(0, i) + nav + out.slice(i);
   });
 
+  // 본문 중간 광고: 3번째 h2 앞에 1개, h2가 8개 이상이면 7번째 h2 앞에 1개 더
+  eleventyConfig.addFilter("withAds", (html, adHtml) => {
+    if (!adHtml || !adHtml.trim()) return html;
+    const pos = [];
+    const re = /<h2[ >]/g;
+    let m;
+    while ((m = re.exec(html))) pos.push(m.index);
+    const at = [];
+    if (pos.length >= 4) at.push(pos[2]);
+    if (pos.length >= 8) at.push(pos[6]);
+    let out = html;
+    for (const i of at.reverse()) out = out.slice(0, i) + adHtml + out.slice(i);
+    return out;
+  });
+
   eleventyConfig.addFilter("breadcrumbLd", (page, title, parent, site) => {
     const items = [{ name: "홈", url: "/" }];
     if (parent) items.push(parent);
