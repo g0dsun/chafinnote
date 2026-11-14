@@ -36,6 +36,8 @@
 {% if layout_type == "post" %}
 <script type="application/ld+json">{% set cat = category | categoryInfo %}{{ page | articleLd(title, description, date, updated, (image or site.ogImage), (cat.name if cat else ""), site) | jsonld | safe }}</script>
 {% endif %}
+{% if site.gaId %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ site.gaId }}');</script>{% endif %}
 {% if site.adsenseId %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsenseId }}" crossorigin="anonymous"></script>{% endif %}
 </head>
 <body{% if page.url == "/" %} class="home"{% endif %}>

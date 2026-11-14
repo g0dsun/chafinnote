@@ -9,5 +9,6 @@ export default {
   noindex: false, // 배포 전용: true면 전 페이지 noindex, robots.txt Disallow, sitemap.xml 미생성. 정식 오픈 시 false
   adsenseId: "ca-pub-6429838325916693", // 예: "ca-pub-0000000000000000" 입력 시 광고 스크립트와 슬롯 활성화
   adSlots: { mid: "5043622192", bottom: "3730540522", home: "2114206521", calc: "8417880092" }, // 애드센스 광고 단위 ID(위치별)
+  gaId: "G-2CZD7F4FE3", // 구글 애널리틱스 4 측정 ID (빈 값이면 태그 미삽입)
   ogImage: "/assets/img/og-default.png", // 글에 image: 를 지정하면 그 글만 덮어씀
 };
