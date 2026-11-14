@@ -10,9 +10,9 @@ permalink: "{{ entry.url }}"
 <p>{{ entry.description }}</p>
 {% include "partials/category-nav.njk" %}
 {% if entry.items.length %}
-<ul class="post-list">
+<ul class="cards page-cards">
 {% for post in entry.items %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a><p>{{ post.data.description }}</p><time datetime="{{ post.date | dateYmd }}">{{ post.date | dateYmd }}</time></li>
+  {%- include "partials/post-card.njk" %}
 {% endfor %}
 </ul>
 {% else %}
