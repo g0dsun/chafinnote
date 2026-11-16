@@ -35,7 +35,7 @@ sources:
 - 현재 갚고 있는 대출과 할부의 목록
 - 구입하려는 차량의 가격과 내가 넣을 수 있는 선수금
 
-심사에 영향을 주는 요소는 [할부 승인 심사에서 보는 것들](/posts/installment-approval-screening/)에서, 한도와 금리를 결정하는 요소는 [중고차 대출 한도와 금리가 정해지는 요소, 견적 받기 전에 알아둘 것](/posts/used-car-loan-limit-and-rate-factors/)에서 다뤘습니다.
+심사에 영향을 주는 요소는 [자동차 할부 승인 심사, 신청 전 확인할 것과 거절 때 대응](/posts/installment-approval-screening/)에서, 한도와 금리를 결정하는 요소는 [중고차 대출 한도와 금리가 정해지는 요소, 견적 받기 전에 알아둘 것](/posts/used-car-loan-limit-and-rate-factors/)에서 다뤘습니다.
 
 ## 점수 기준은 어디서 확인하나요?
 
@@ -54,7 +54,7 @@ sources:
 5. 중도상환수수료가 있는지
 6. 차량의 소유권과 저당권이 누구 이름으로 설정되는지
 
-항목마다 모르는 부분은 서면으로 설명을 받아 두세요. 할부와 대출이 계약서상 어떻게 다른지는 [중고차 할부와 중고차 대출 차이, 계약서에서 확인할 것](/posts/used-car-installment-vs-loan-difference/)에, 월 납입금이 만들어지는 원리는 [중고차 할부 계산, 월 납입금이 이렇게 정해집니다](/posts/used-car-installment-monthly-payment/)에 정리했습니다. 판매점이 소개하는 금융과 직접 신청하는 금융의 차이는 [딜러 연계 대출과 직접 대출, 어떻게 비교하고 무엇을 확인할까](/posts/dealer-loan-vs-direct-loan/)에서 볼 수 있습니다.
+항목마다 모르는 부분은 서면으로 설명을 받아 두세요. 할부와 대출이 계약서상 어떻게 다른지는 [중고차 할부와 중고차 대출 차이, 계약서에서 확인할 것](/posts/used-car-installment-vs-loan-difference/)에, 월 납입금이 만들어지는 원리는 [중고차 할부 계산, 월 납입금이 이렇게 정해집니다](/posts/used-car-installment-monthly-payment/)에 정리했습니다. 판매점이 소개하는 금융과 직접 신청하는 금융의 차이는 [중고차 딜러 연계 대출 vs 직접 대출, 무엇을 비교할까](/posts/dealer-loan-vs-direct-loan/)에서 볼 수 있습니다.
 
 ## 저신용자를 노리는 자동차 금융사기는 어떤 모습인가요?
 
