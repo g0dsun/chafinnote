@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" height="250" role="img" aria-labelledby="t d"><title id="t">조회와 직접 확인 비교</title><desc id="d">기록을 조회해서 보는 것과 차를 직접 보고 확인하는 것을 나란히 비교한 도식</desc>
+<rect width="720" height="250" fill="#f7f8fa"/>
+<g font-family="Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<rect x="20" y="20" width="335" height="210" rx="12" fill="#14213d"/><rect x="365" y="20" width="335" height="210" rx="12" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+<text x="187" y="54" text-anchor="middle" font-size="18" font-weight="700" fill="#e5b84b">기록 조회</text>
+<text x="532" y="54" text-anchor="middle" font-size="18" font-weight="700" fill="#14213d">직접 확인</text>
+<g fill="#ffffff" font-size="15"><text x="44" y="94">· 카히스토리: 보험사고 기록과</text><text x="56" y="116">침수 피해 보상 이력</text><text x="44" y="146">· 자동차365: 차량 정비 사항</text><text x="44" y="176">· 성능점검기록부, 사고 이력</text><text x="44" y="206" fill="#e5b84b">기록에 없다고 안전하다는 뜻은 아님</text></g>
+<g fill="#14213d" font-size="15"><text x="389" y="94">· 곰팡이 냄새, 악취</text><text x="389" y="124">· 안전벨트를 끝까지 당겨 확인</text><text x="389" y="154">· 구석의 모래·진흙·녹</text><text x="389" y="184">· 배선이 전부 새것인지</text><text x="389" y="214" fill="#8a6a10">계약서 특약으로 마무리</text></g>
+</g></svg>

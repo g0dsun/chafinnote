@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" role="img" aria-labelledby="t d"><title id="t">침수 흔적 확인 부위</title><desc id="d">행정안전부가 안내한 침수차 확인 부위 8곳을 목록으로 정리한 표</desc>
+<rect width="720" height="300" fill="#f7f8fa"/>
+<g font-family="Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="360" y="30" text-anchor="middle" font-size="16" fill="#14213d" font-weight="700">침수 흔적 확인 부위 8곳</text>
+<g fill="#14213d"><rect x="20" y="50" width="335" height="50" rx="8"/><rect x="365" y="50" width="335" height="50" rx="8"/><rect x="20" y="110" width="335" height="50" rx="8"/><rect x="365" y="110" width="335" height="50" rx="8"/><rect x="20" y="170" width="335" height="50" rx="8"/><rect x="365" y="170" width="335" height="50" rx="8"/><rect x="20" y="230" width="335" height="50" rx="8"/><rect x="365" y="230" width="335" height="50" rx="8"/></g>
+<g fill="#e5b84b" font-size="18" font-weight="700"><text x="38" y="82">1</text><text x="383" y="82">2</text><text x="38" y="142">3</text><text x="383" y="142">4</text><text x="38" y="202">5</text><text x="383" y="202">6</text><text x="38" y="262">7</text><text x="383" y="262">8</text></g>
+<g fill="#ffffff" font-size="16"><text x="70" y="81">도어·트렁크 힌지 볼트</text><text x="415" y="81">고무 몰딩 안쪽 오염 흔적</text><text x="70" y="141">안전벨트 안쪽</text><text x="415" y="141">엔진룸 내 전자 제어장치</text><text x="70" y="201">시트 바닥</text><text x="415" y="201">전기장치</text><text x="70" y="261">시거잭 속</text><text x="415" y="261">에어컨 필터·악취</text></g>
+</g></svg>

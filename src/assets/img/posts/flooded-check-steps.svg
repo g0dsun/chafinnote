@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="720" height="220" role="img" aria-labelledby="t d"><title id="t">침수차 확인 순서</title><desc id="d">계약 전 이력 조회, 실내 확인, 숨은 곳 확인, 계약서 특약 기재 순서의 흐름도</desc>
+<rect width="720" height="220" fill="#f7f8fa"/>
+<g font-family="Apple SD Gothic Neo,Malgun Gothic,sans-serif" text-anchor="middle">
+<g fill="#14213d"><rect x="20" y="50" width="150" height="120" rx="10"/><rect x="195" y="50" width="150" height="120" rx="10"/><rect x="370" y="50" width="150" height="120" rx="10"/><rect x="545" y="50" width="155" height="120" rx="10"/></g>
+<g fill="#e5b84b" font-size="15" font-weight="700"><text x="95" y="82">1단계</text><text x="270" y="82">2단계</text><text x="445" y="82">3단계</text><text x="622" y="82">4단계</text></g>
+<g fill="#ffffff" font-size="17" font-weight="700"><text x="95" y="112">이력 조회</text><text x="270" y="112">실내 냄새·벨트</text><text x="445" y="112">숨은 곳 점검</text><text x="622" y="112">계약서 특약</text></g>
+<g fill="#d8dce6" font-size="13"><text x="95" y="140" font-size="12">카히스토리·자동차365</text><text x="270" y="140">곰팡이·악취, 안전벨트</text><text x="445" y="140">시트 바닥·엔진룸·힌지</text><text x="622" y="140">침수 시 전액 환급 기재</text></g>
+<g fill="#e5b84b" font-size="22"><text x="182" y="116">›</text><text x="357" y="116">›</text><text x="532" y="116">›</text></g>
+<text x="360" y="30" font-size="16" fill="#14213d" font-weight="700">계약 전 침수차 확인 순서</text>
+<text x="360" y="203" font-size="12" fill="#5b6478">출처: 한국소비자원 소비자24(2022-09-02), 행정안전부 정책브리핑(2023-08-01)</text>
+</g></svg>
