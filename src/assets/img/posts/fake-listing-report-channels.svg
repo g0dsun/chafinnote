@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230" width="720" height="230" role="img" aria-labelledby="t d"><title id="t">신고와 상담 창구</title><desc id="d">허위매물 신고는 국민신문고, 지자체 콜센터, 자동차365 신고센터에서, 피해 상담은 1372소비자상담센터와 소비자24에서 하는 구분도</desc>
+<rect width="720" height="230" fill="#f7f8fa"/>
+<g font-family="Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<rect x="20" y="20" width="335" height="190" rx="12" fill="#14213d"/><rect x="365" y="20" width="335" height="190" rx="12" fill="#ffffff" stroke="#14213d" stroke-width="2"/>
+<text x="187" y="54" text-anchor="middle" font-size="18" font-weight="700" fill="#e5b84b">허위매물 신고</text>
+<text x="532" y="54" text-anchor="middle" font-size="18" font-weight="700" fill="#14213d">피해 상담·구제</text>
+<g fill="#ffffff" font-size="15"><text x="44" y="96">· 국민신문고</text><text x="44" y="126">· 지자체 콜센터(지역번호+120)</text><text x="44" y="156">· 자동차365 허위매물 차량신고</text></g>
+<g fill="#14213d" font-size="15"><text x="389" y="96">· 1372소비자상담센터</text><text x="389" y="126">· 소비자24(누리집·앱)</text><text x="389" y="156">· 거래내역·증빙서류를 갖춰 신청</text></g>
+</g></svg>

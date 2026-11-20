@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" role="img" aria-labelledby="t d"><title id="t">허위매물 의심·중단 신호</title><desc id="d">공정거래위원회 2011년 안내에 나온 허위매물 의심 신호와 구매를 멈출 신호를 정리한 표</desc>
+<rect width="720" height="300" fill="#f7f8fa"/>
+<g font-family="Apple SD Gothic Neo,Malgun Gothic,sans-serif">
+<text x="360" y="28" text-anchor="middle" font-size="16" fill="#14213d" font-weight="700">허위매물 의심·중단 신호</text>
+<g fill="#14213d"><rect x="20" y="46" width="335" height="50" rx="8"/><rect x="365" y="46" width="335" height="50" rx="8"/><rect x="20" y="106" width="335" height="50" rx="8"/><rect x="365" y="106" width="335" height="50" rx="8"/><rect x="20" y="166" width="335" height="50" rx="8"/><rect x="365" y="166" width="335" height="50" rx="8"/><rect x="20" y="226" width="335" height="50" rx="8"/><rect x="365" y="226" width="335" height="50" rx="8"/></g>
+<g fill="#e5b84b" font-size="18" font-weight="700"><text x="38" y="78">1</text><text x="383" y="78">2</text><text x="38" y="138">3</text><text x="383" y="138">4</text><text x="38" y="198">5</text><text x="383" y="198">6</text><text x="38" y="258">7</text><text x="383" y="258">8</text></g>
+<g fill="#ffffff" font-size="15"><text x="68" y="77">평균 시세보다 지나치게 쌈</text><text x="413" y="77">차량번호를 가린 사진</text><text x="68" y="137">사진 배경이 계절에 안 맞음</text><text x="413" y="137">여러 판매자의 같은 사진</text><text x="68" y="197">연식 대비 짧은 주행거리</text><text x="413" y="197">서류를 나중에 보내겠다고 함</text><text x="68" y="257">현장에 통화한 사람이 아님</text><text x="413" y="257">시운전을 거부함</text></g>
+<text x="360" y="293" text-anchor="middle" font-size="11" fill="#5b6478">출처: 공정거래위원회 소비자 피해주의보(2011-04-07). 오래된 자료라 참고용</text>
+</g></svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" height="250" role="img" aria-labelledby="t d"><title id="t">방문 전 확인할 4가지</title><desc id="d">시세, 매매용 차량 여부, 차량정보와 점검기록부 대조, 침수이력을 방문 전에 확인하는 순서도</desc>
+<rect width="720" height="250" fill="#f7f8fa"/>
+<g font-family="Apple SD Gothic Neo,Malgun Gothic,sans-serif" text-anchor="middle">
+<text x="360" y="30" font-size="16" fill="#14213d" font-weight="700">매매상사 방문 전 확인할 4가지</text>
+<g fill="#14213d"><rect x="20" y="50" width="150" height="150" rx="10"/><rect x="195" y="50" width="150" height="150" rx="10"/><rect x="370" y="50" width="150" height="150" rx="10"/><rect x="545" y="50" width="155" height="150" rx="10"/></g>
+<g fill="#e5b84b" font-size="15" font-weight="700"><text x="95" y="80">1</text><text x="270" y="80">2</text><text x="445" y="80">3</text><text x="622" y="80">4</text></g>
+<g fill="#ffffff" font-size="17" font-weight="700"><text x="95" y="112">시세 확인</text><text x="270" y="112">매매용 차량 여부</text><text x="445" y="112">차량정보 대조</text><text x="622" y="112">침수이력 확인</text></g>
+<g fill="#d8dce6" font-size="13"><text x="95" y="142">시세와 평균 매매</text><text x="95" y="162">금액 확인</text><text x="270" y="142">매매조합에 정식</text><text x="270" y="162">등록됐는지 확인</text><text x="445" y="142">점검기록부 기재와</text><text x="445" y="162">일치하는지 확인</text><text x="622" y="142">침수 정보 조회로</text><text x="622" y="162">숨긴 이력 확인</text></g>
+<text x="360" y="232" font-size="12" fill="#5b6478">출처: 자동차365 중고차 허위매물 점검 가이드(국토교통부·한국교통안전공단)</text>
+</g></svg>
